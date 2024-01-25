@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+:root {
+  --font-color: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Roboto";
+}
+
+menu {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------ NAVIGATION-1  END  */
+
+.nav1 {
+  height: 7.5%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid black; */
+  padding: 0 25px;
+}
+
+.nav1-left {
+  display: flex;
+}
+
+.circle1 {
+  width: 14px;
+  height: 14px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.nav1-right {
+  font-size: 10px;
+  display: flex;
+  gap: 35px;
+}
+
+.nav1-right p span {
+  opacity: 0.5;
+  margin-left: 15px;
+  color: #666;
+  font-weight: 900;
+}
+
+.nav1-right p:last-child {
+  display: none;
+}
+
+/* ------------ NAVIGATION-1  END  */
+
+/* ------------ NAVIGATION-2  start */
+
+.navigation2 {
+  height: 7.5%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 25px;
+  gap: 60px;
+
+  font-size: 10px;
+}
+
+/* ------------ NAVIGATION-2  end */
+
+/* ------------ captions  start */
+
+.captions {
+  height: 35%;
+
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  overflow-x: scroll;
+
+  font-family: 100;
+}
+
+.ele {
+  width: 60%;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.ele .top {
+  font-size: 1.5rem;
+}
+
+.ele .top span {
+  font-size: 1rem;
+  margin-left: 40rem;
+}
+
+.ele .bottom {
+  font-size: 11rem;
+}
+
+.captions::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+}
+
+/* Set the color for the scrollbar thumb */
+.captions::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+/* ------------ captions  end */
+
+.images {
+  height: 50%;
+
+  display: flex;
+
+  overflow-x: scroll;
+}
+
+.images::-webkit-scrollbar {
+  display: none;
+  background-color: transparent;
+  height: 8px;
+}
+
+.images::-webkit-scrollbar-thumb {
+  background-color: #fff78a;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+img:first-child {
+  object-position: center 30%;
+}
+
+/* ---------------------------------------------->>>> */
+
+@media (max-width: 600px) {
+  .nav1 {
+    height: 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .circle1 {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  .nav1-right p {
+    display: none;
+    font-size: 10px;
+  }
+
+  .nav1-right p:first-child {
+    display: initial;
+  }
+
+  .nav1-right p:last-child {
+    display: initial;
+  }
+
+  .navigation2 {
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    gap: 5px;
+    font-size: 1.5vw;
+  }
+
+  .captions {
+    height: 35%;
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    overflow-x: scroll;
+
+    font-family: 100;
+  }
+
+  .ele {
+    width: 80%;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  .ele .top {
+    font-size: 5vw;
+  }
+
+  .ele .top span {
+    font-size: 5vw;
+    margin-left: 4vw;
+  }
+
+  .ele .bottom {
+    font-size: 20vw;
+  }
+
+  .captions::-webkit-scrollbar {
+    background-color: transparent;
+    height: 8px;
+  }
+
+  /* Set the color for the scrollbar thumb */
+  .captions::-webkit-scrollbar-thumb {
+    background-color: orange;
+  }
+
+  .images {
+    height: 57.5%;
+
+    display: flex;
+
+    overflow-x: scroll;
+  }
+
+  .images::-webkit-scrollbar {
+    display: none;
+    background-color: transparent;
+    height: 8px;
+  }
+
+  .images::-webkit-scrollbar-thumb {
+    background-color: #fff78a;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  img:first-child {
+    object-position: center 30%;
+  }
+}

@@ -1,0 +1,11 @@
+horizontal scroll
+
+defined width
+horizontal overflow  scroll
+customize scroll bar
+smoth scrolling horizontal 
+
+calc
+
+flex wrap 
+flex shrink
